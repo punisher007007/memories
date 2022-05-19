@@ -15,10 +15,10 @@ const CONNECTION_URL = 'mongodb+srv://rohithadmin:Master2541548@cluster0.br1sd.m
 
 const PORT = process.env.PORT || 5000;
 
-mongoose.connect(CONNECTION_URL, {useNewUrlParser: true, useUnifiedTopology: true }) // two argumentd are not nneded but might cause errors in console
+mongoose.connect(CONNECTION_URL, {useNewUrlParser: true, useUnifiedTopology: true }); // two argumentd are not nneded but might cause errors in console
    
-.then(() => app.listen(PORT, () => console.log(`Server running on port: ${PORT}`)))
-    .catch ((error) => console.log(error.message));
+//.then(() => app.listen(PORT, () => console.log(`Server running on port: ${PORT}`)))
+//.catch ((error) => console.log(error.message))
 
-mongoose.set('useFindAndModify', false) //to dont get any errors in console
+//mongoose.set('useFindAndModify', false);  //to dont get any errors in console
 
